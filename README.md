@@ -1,8 +1,8 @@
-# Superheroes!
+# Basketball Season!
 
 ## Description
 
-In this lab, you'll practice building nested forms in Sinatra for creating teams of superheros. No database is required, but feel free to add persistence *after* you have successfully completed the instructions below.
+In this lab, you'll practice building forms in Sinatra by creating a basketball team sign-up sheet. Your application will have a basic html form, and will display the data from the form after it has been submitted by the user.
 
 ## Instructions
 
