@@ -11,10 +11,17 @@ In this lab, you'll practice building nested forms in Sinatra for creating teams
 
 ### Make a form
 
-1. Create a route that responds to a GET request at `/`.
-2. Create a view with a form and render it in the GET `/` route.
-3. The form should have fields for the `name` of a superhero team and their `motto`.
-4. There should be form inputs for each of the three superhero member's `name`, `power`, and `bio`.
+1. Create a route that responds to a GET request at `/team`.
+2. Create a view with a form and render it in the GET `/team` route.
+3. The form should have fields for:
+
++ Team name ('name')
++ Coach ('coach')
++ Point Guard ('pg')
++ Shooting Guard ('sg')
++ Power Forward ('pf')
++ Small Forward ('sf')
++ Center ('c')
 
 It should look something like this:
 
@@ -22,19 +29,13 @@ It should look something like this:
 
 ### Handle form submission
 
-1. Create a route that responds to a POST request at `/teams`
+1. Create a route that responds to a POST request at `/team`
 2. Have the form send a POST request to this route.
 2. Upon submission, render a template that displays the submitted team data and each member's data.
 
 ## Final Output
 
-Your params should be nested. For example, you would access the first super-hero's name as:
-
-```ruby
-params["team"]["members"][0][name]
-```
-
-When you post to this form you should render a page that displays the name of the team and each member of the team, along with their name, super power and bio.
+When you post to this form you should render a page that displays the name of the team and each member of the team.
 
 Your view should display something like this:
 
