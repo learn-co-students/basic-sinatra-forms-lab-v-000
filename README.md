@@ -25,7 +25,7 @@ In this lab, you'll practice building forms in Sinatra by creating a basketball 
 
 It should look something like this:
 
-![Imgur](http://i.imgur.com/zrbFWNE.png?1)
+ADD IMAGE
 
 ### Handle form submission
 
@@ -39,7 +39,7 @@ When you post to this form you should render a page that displays the name of th
 
 Your view should display something like this:
 
-![Imgur](http://i.imgur.com/SzO0phP.png?1)
+ADD IMAGE
 
 ## Deliverables
 
