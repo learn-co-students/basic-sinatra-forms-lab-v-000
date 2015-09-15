@@ -12,7 +12,7 @@ In this lab, you'll practice building forms in Sinatra by creating a basketball 
 ### Make a form
 
 1. Create a route that responds to a GET request at `/team`.
-2. Create a view with a form and render it in the GET `/team` route.
+2. Add a form to the `team.erb` template and render it in the GET `/team` route.
 3. The form should have fields for:
 
 + Team name ('name')
