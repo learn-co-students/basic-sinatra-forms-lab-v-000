@@ -25,7 +25,7 @@ In this lab, you'll practice building forms in Sinatra by creating a basketball 
 
 It should look something like this:
 
-ADD IMAGE
+![form for basketball team](https://curriculum-content.s3.amazonaws.com/web-development/Sinatra/basketball-form.png)
 
 ### Handle form submission
 
@@ -39,7 +39,7 @@ When you post to this form you should render a page that displays the name of th
 
 Your view should display something like this:
 
-ADD IMAGE
+![completed form](https://curriculum-content.s3.amazonaws.com/web-development/Sinatra/basketball-results.png)
 
 ## Deliverables
 
