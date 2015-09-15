@@ -19,7 +19,7 @@ describe App do
     before do
       post '/team', {
         :name => "The Astronauts",
-        :coach => "George Washington"
+        :coach => "George Washington",
         :pg => "Abraham Lincoln",
         :sg => "James Madison",
         :sf => "Andre the Giant",
