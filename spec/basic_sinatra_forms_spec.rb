@@ -28,8 +28,7 @@ describe App do
     visit '/newteam'
 
     fill_in(:name, :with => "Bballers")
-    click_button "submit"
-binding.pry
+    click_button 'submit'
     expect(page).to have_text("Team Name: Bballers")
   end
 
@@ -54,7 +53,7 @@ binding.pry
   it "displays the shooting guard's name in the browser" do
     visit '/newteam'
 
-    fill_in(:pg, :with => "Ralph")
+    fill_in(:sg, :with => "Ralph")
     click_button "submit"
 
     expect(page).to have_text("Shooting Guard: Ralph")
