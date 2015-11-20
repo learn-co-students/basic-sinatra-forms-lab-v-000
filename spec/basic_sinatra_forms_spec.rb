@@ -29,7 +29,6 @@ describe App do
 
     fill_in(:name, :with => "Bballers")
     click_button "submit"
-binding.pry
     expect(page).to have_text("Team Name: Bballers")
   end
 
