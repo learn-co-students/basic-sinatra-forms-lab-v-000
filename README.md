@@ -49,3 +49,5 @@ Pass the tests!
 * [Ashley William's GitHub](https://github.com/ashleygwilliams/) - [Sinatra Form Party](https://github.com/ashleygwilliams/sinatra-form-party)
 
 * [Ashley William's GitHub](https://github.com/ashleygwilliams/) - [Citibike Sinatra](https://github.com/ashleygwilliams/citibike-sinatra)
+
+<a href='https://learn.co/lessons/basic-sinatra-forms-lab' data-visibility='hidden'>View this lesson on Learn.co</a>
