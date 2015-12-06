@@ -1,10 +1,6 @@
 describe App do
 
   describe 'GET /newteam' do
-    # before do 
-    #   visit '/newteam'
-    # end
-
     it 'sends a 200 status code' do
       get '/newteam'
       expect(last_response.status).to eq(200)
@@ -24,13 +20,13 @@ describe App do
   end
 
   describe 'POST /team' do
-   it "displays the basketball team name in the browser" do 
-    visit '/newteam'
+    it "displays the basketball team name in the browser" do 
+      visit '/newteam'
 
-    fill_in(:name, :with => "Bballers")
-    click_button 'submit'
-    expect(page).to have_text("Team Name: Bballers")
-  end
+      fill_in(:name, :with => "Bballers")
+      click_button "submit"
+      expect(page).to have_text("Team Name: Bballers")
+    end
 
   it "displays the coach's name in the browser" do
     visit '/newteam'
