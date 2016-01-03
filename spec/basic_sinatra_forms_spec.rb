@@ -49,7 +49,7 @@ describe App do
     it "displays the shooting guard's name in the browser" do
       visit '/newteam'
 
-      fill_in(:pg, :with => "Ralph")
+      fill_in(:sg, :with => "Ralph")
       click_button "submit"
 
       expect(page).to have_text("Shooting Guard: Ralph")
@@ -67,10 +67,10 @@ describe App do
     it "displays the shooting gaurd's name in the browser" do
       visit '/newteam'
 
-      fill_in(:sg, :with => "Joe")
+      fill_in(:sf, :with => "Joe")
       click_button "submit"
 
-      expect(page).to have_text("Shooting Guard: Joe")
+      expect(page).to have_text("Small Forward: Joe")
     end
 
     it "displays the center's name in the browser" do
