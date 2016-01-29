@@ -50,4 +50,4 @@ In this lab, you'll practice building forms in Sinatra by creating a basketball 
 
 * [Ashley William's GitHub](https://github.com/ashleygwilliams/) - [Citibike Sinatra](https://github.com/ashleygwilliams/citibike-sinatra)
 
-<a href='https://learn.co/lessons/basic-sinatra-forms-lab' data-visibility='hidden'>View this lesson on Learn.co</a>
+<p data-visibility='hidden'>View <a href='https://learn.co/lessons/basic-sinatra-forms-lab' title='Sinatara Forms Lab'>Sinatara Forms Lab</a> on Learn.co and start learning to code for free.</p>
