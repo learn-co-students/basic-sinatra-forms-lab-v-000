@@ -11,13 +11,15 @@ GEM
     coderay (1.1.0)
     daemons (1.2.3)
     diff-lcs (1.2.5)
-    eventmachine (1.0.8)
+    eventmachine (1.0.9.1)
     method_source (0.8.2)
-    mime-types (2.6.2)
-    mini_portile (0.6.2)
+    mime-types (3.0)
+      mime-types-data (~> 3.2015)
+    mime-types-data (3.2015.1120)
+    mini_portile2 (2.0.0)
     multi_json (1.11.2)
-    nokogiri (1.6.6.2)
-      mini_portile (~> 0.6.0)
+    nokogiri (1.6.7.2)
+      mini_portile2 (~> 2.0.0.rc2)
     poltergeist (1.8.0)
       capybara (~> 2.1)
       cliver (~> 0.3.1)
@@ -27,12 +29,12 @@ GEM
       coderay (~> 1.1.0)
       method_source (~> 0.8.1)
       slop (~> 3.4)
-    rack (1.5.2)
-    rack-protection (1.5.0)
+    rack (1.6.4)
+    rack-protection (1.5.3)
       rack
     rack-test (0.6.3)
       rack (>= 1.0)
-    rake (10.4.2)
+    rake (10.5.0)
     require_all (1.3.2)
     rspec (3.3.0)
       rspec-core (~> 3.3.0)
@@ -69,16 +71,16 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  capybara
-  poltergeist
-  pry
-  rack-test
+  capybara (= 2.5.0)
+  poltergeist (= 1.8.0)
+  pry (= 0.10.1)
+  rack-test (= 0.6.3)
   rake
-  require_all
-  rspec
-  shotgun
-  sinatra
-  thin
+  require_all (= 1.3.2)
+  rspec (= 3.3.0)
+  shotgun (= 0.9)
+  sinatra (= 1.4.3)
+  thin (= 1.6.3)
 
 BUNDLED WITH
-   1.10.6
+   1.11.2
