@@ -19,7 +19,7 @@ describe App do
     end
   end
 
-  describe 'POST /team' do
+  describe 'POST /newteam' do
     it "displays the basketball team name in the browser" do 
       visit '/newteam'
 
@@ -49,7 +49,7 @@ describe App do
     it "displays the shooting guard's name in the browser" do
       visit '/newteam'
 
-      fill_in(:pg, :with => "Ralph")
+      fill_in(:sg, :with => "Ralph")
       click_button "submit"
 
       expect(page).to have_text("Shooting Guard: Ralph")
