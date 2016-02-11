@@ -1,0 +1,13 @@
+/usr/local/opt/rbenv/versions/2.1.5/bin/ruby -r ./siteconf20160211-5044-15tx5r5.rb extconf.rb
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling rubymain.cpp
+compiling mapper.cpp
+linking shared-object fastfilereaderext.so
+
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 fastfilereaderext.so ./.gem.20160211-5044-9ehel1
+installing default fastfilereaderext libraries
