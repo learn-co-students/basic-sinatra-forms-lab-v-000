@@ -21,8 +21,9 @@ describe App do
 
   describe 'POST /team' do
     it "displays the basketball team name in the browser" do 
+     
       visit '/newteam'
-
+# binding.pry
       fill_in(:name, :with => "Bballers")
       click_button "submit"
       expect(page).to have_text("Team Name: Bballers")
