@@ -3,7 +3,7 @@ require 'sinatra/base'
 class App < Sinatra::Base
 
   get '/newteam' do
-    erb :newteam
+    erb :team
   end
 
   post '/newteam' do
@@ -14,7 +14,7 @@ class App < Sinatra::Base
     @sf = params[:sf]
     @pf = params[:pf]
     @c = params[:c]
-    erb :team
+    erb :newteam
   end
 
 end
