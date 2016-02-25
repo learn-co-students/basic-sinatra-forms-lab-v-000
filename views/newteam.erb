@@ -2,18 +2,29 @@
 <html>
  <head>
   <meta charset="UTF-8">
-  <title>Basketball Team Signup</title>
+  <title>Basketball Team!</title>
  </head>
  <body>
-    <h1>Team Name: <%= params[:name]%> </h1>
-    <h2>Coach: <%= params[:coach]%> </h2>
-    <h2>Point Guard: <%= params[:pg]%> </h2>
-    <h2>Shooting Guard: <%= params[:sg]%> </h2>
-    <h2>Power Forward: <%= params[:pf]%> </h2>
-    <h2>Small Forward: <%= params[:sf]%> </h2>
-    <h2>Center: <%= params[:c]%> </h2>
+  <h1>Create A Basketball Team!</h1>
+    <form method="post" action="/team">
+      <h4><label for="name">Team Name:</label><input type="text" name="name" id="name" />
+</h4>
+      <h4><label for="coach">Coach:</label><input type="text" name="coach" id="coach" />
+</h4>
+      <h4><label for="pg">Point Guard:</label><input type="text" name="pg" id="pg" />
+</h4>
+      <h4><label for="sg">Shooting Guard:</label><input type="text" name="sg" id="sg" />
+</h4>
+      <h4><label for="pf">Power Forward:</label><input type="text" name="pf" id="pf" />
+</h4>
+      <h4><label for="sf">Small Forward:</label><input type="text" name="sf" id="sf" />
+</h4>
+      <h4><label for="c">Center:</label><input type="text" name="c" id="c" />
+</h4>
+      <input type="submit" name="submit" value="submit"/>
+    </form>
+
 
  </body>
 </html>
-
 

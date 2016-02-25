@@ -1,13 +1,13 @@
 describe App do
 
-  describe 'GET /team' do
+  describe 'GET /newteam' do
     it 'sends a 200 status code' do
-      get '/team'
+      get '/newteam'
       expect(last_response.status).to eq(200)
     end
 
     it 'renders basketball team form' do 
-      visit '/team'
+      visit '/newteam'
       expect(page).to have_selector("form")
       expect(page).to have_field(:name)
       expect(page).to have_field(:coach)
@@ -49,7 +49,7 @@ describe App do
     it "displays the shooting guard's name in the browser" do
       visit '/newteam'
 
-      fill_in(:pg, :with => "Ralph")
+      fill_in(:sg, :with => "Ralph")
       click_button "submit"
 
       expect(page).to have_text("Shooting Guard: Ralph")
