@@ -19,7 +19,7 @@ describe App do
     end
   end
 
-  describe 'POST /team' do
+  describe 'POST /newteam' do
     it "displays the basketball team name in the browser" do 
       visit '/newteam'
 
