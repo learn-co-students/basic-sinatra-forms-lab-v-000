@@ -1,13 +1,13 @@
 describe App do
 
-  describe 'GET /newteam' do
+  describe 'GET /team' do
     it 'sends a 200 status code' do
-      get '/newteam'
+      get '/team'
       expect(last_response.status).to eq(200)
     end
 
     it 'renders basketball team form' do 
-      visit '/newteam'
+      visit '/team'
       expect(page).to have_selector("form")
       expect(page).to have_field(:name)
       expect(page).to have_field(:coach)
@@ -21,7 +21,7 @@ describe App do
 
   describe 'POST /team' do
     it "displays the basketball team name in the browser" do 
-      visit '/newteam'
+      visit '/team'
 
       fill_in(:name, :with => "Bballers")
       click_button "submit"
@@ -29,7 +29,7 @@ describe App do
     end
 
     it "displays the coach's name in the browser" do
-      visit '/newteam'
+      visit '/team'
 
       fill_in(:coach, :with => "Walter")
       click_button "submit"
@@ -38,7 +38,7 @@ describe App do
     end
 
     it "displays the point guard's name in the browser" do
-      visit '/newteam'
+      visit '/team'
 
       fill_in(:pg, :with => "Jeff")
       click_button "submit"
@@ -47,7 +47,7 @@ describe App do
     end
 
     it "displays the shooting guard's name in the browser" do
-      visit '/newteam'
+      visit '/team'
 
       fill_in(:sg, :with => "Ralph")
       click_button "submit"
@@ -56,7 +56,7 @@ describe App do
     end
 
     it "displays the power forward's name in the browser" do
-      visit '/newteam'
+      visit '/team'
 
       fill_in(:pf, :with => "Danny")
       click_button "submit"
@@ -65,16 +65,16 @@ describe App do
     end
 
     it "displays the shooting gaurd's name in the browser" do
-      visit '/newteam'
+      visit '/team'
 
-      fill_in(:sg, :with => "Joe")
+      fill_in(:sf, :with => "Joe")
       click_button "submit"
 
-      expect(page).to have_text("Shooting Guard: Joe")
+      expect(page).to have_text("Small Forward: Joe")
     end
 
     it "displays the center's name in the browser" do
-      visit '/newteam'
+      visit '/team'
 
       fill_in(:c, :with => "Avi")
       click_button "submit"
