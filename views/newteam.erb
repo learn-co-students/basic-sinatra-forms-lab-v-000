@@ -7,7 +7,16 @@
  <body>
 
 
+  <form method="POST" action="/team">
+  <% @team_members.each do |member| %>
+
+   <label for="<%= member %>"><%= member %>:</label>
+   <input id="<%= member %>" type="text" name='<%= member %>' >
+
+   <br>
+  <% end %>
+   <button type="submit" value="submit">submit<button>
+  </form>
+
  </body>
 </html>
-
-
