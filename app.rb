@@ -9,13 +9,12 @@ class App < Sinatra::Base
 
   post '/team' do
     @team = params
-    raise params
     @team
     erb :newteam
   end
 
   get '/newteam' do
-    raise params
+    @team = params
     erb :newteam
   end
 
