@@ -8,7 +8,7 @@ class App < Sinatra::Base
   get '/newteam' do
     erb :newteam
   end
-
+#####this is not the same as the lessons
 
   post'/team' do
     @team = params["name"]
