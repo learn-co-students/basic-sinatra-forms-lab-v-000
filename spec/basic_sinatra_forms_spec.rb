@@ -1,3 +1,4 @@
+require_relative './spec_helper.rb'
 describe App do
 
   describe 'GET /newteam' do
@@ -6,7 +7,7 @@ describe App do
       expect(last_response.status).to eq(200)
     end
 
-    it 'renders basketball team form' do 
+    it 'renders basketball team form' do
       visit '/newteam'
       expect(page).to have_selector("form")
       expect(page).to have_field(:name)
@@ -19,8 +20,8 @@ describe App do
     end
   end
 
-  describe 'POST /team' do
-    it "displays the basketball team name in the browser" do 
+  describe 'POST /newteam' do
+    it "displays the basketball team name in the browser" do
       visit '/newteam'
 
       fill_in(:name, :with => "Bballers")
