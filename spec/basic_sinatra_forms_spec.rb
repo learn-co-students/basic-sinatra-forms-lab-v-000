@@ -1,3 +1,5 @@
+require 'spec_helper'
+
 describe App do
 
   describe 'GET /newteam' do
