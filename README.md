@@ -43,7 +43,7 @@ In this lab, you'll practice building forms in Sinatra by creating a basketball 
 
 6. Deliverables
 
-  Pass the tests!
+  Pass the tests! Make sure you read the test output carefully!
 
 ## Resources
 * [Ashley William's GitHub](https://github.com/ashleygwilliams/) - [Sinatra Form Party](https://github.com/ashleygwilliams/sinatra-form-party)
