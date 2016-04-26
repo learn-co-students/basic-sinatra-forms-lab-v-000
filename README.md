@@ -1,4 +1,4 @@
-# Sinatara Forms Lab
+# Sinatra Forms Lab
 
 ## Overview
 
