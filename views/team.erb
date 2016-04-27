@@ -2,12 +2,15 @@
 <html>
  <head>
   <meta charset="UTF-8">
-  <title>Basketball Team</title>
+  <title>Basketball Team Signup</title>
  </head>
  <body>
- 
 
-
+   <h1>Team Name: <%= @team[:name] %></h1>
+   <% @team.delete(:name)
+      @team.each do |position, player| %>
+      <h2><%= position.split('_').map(&:capitalize).join(' ') %>: <%= player %></h2>
+    <% end %>
  </body>
 </html>
 

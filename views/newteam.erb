@@ -2,9 +2,21 @@
 <html>
  <head>
   <meta charset="UTF-8">
-  <title>Basketball Team Signup</title>
+  <title>Basketball Team</title>
  </head>
- <body>
+ <body> 
+   <h1>Create a Basketball Team!</h1>
+
+   <form method="POST" action="/team">
+     <p>Team Name: <input type="text" name="name"></p> 
+     <p>Coach: <input type="text" name="coach"></p> 
+     <p>Point Guard: <input type="text" name="point_guard"></p> 
+     <p>Shooting Guard: <input type="text" name="shooting_guard"></p> 
+     <p>Power Forward: <input type="text" name="power_forward"></p> 
+     <p>Small Forward: <input type="text" name="small_forward"></p> 
+     <p>Center: <input type="text" name="center"></p> 
+     <input type="submit" value="submit">
+   </form> 
 
 
  </body>
