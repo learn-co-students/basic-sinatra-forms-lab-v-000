@@ -8,8 +8,7 @@ class App < Sinatra::Base
   end
 
   post '/team' do
-    @form_hash = params
+    @team = params
     erb :newteam
   end
-
 end
