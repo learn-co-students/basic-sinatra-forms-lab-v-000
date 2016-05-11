@@ -5,7 +5,26 @@
   <title>Basketball Team</title>
  </head>
  <body>
- 
+  
+  <h1>Create a Basketball Team!</h1>
+    <form method="POST" action="/team">
+      <p>Team name: <input type="text" name="name"></p></input>
+      <p>Coach: <input type="text" name="coach"></p></input>
+      <p>Point Guard: <input type="text" name="pg"></p></input>
+      <p>Shooting Guard: <input type="text" name="sg"></p></input>
+      <p>Small Forward: <input type="text" name="sf"></p></input>
+      <p>Power Forward:<input type="text" name="pf"></p></input>
+      <p>Center: <input type="text" name="c"></p>
+      <button type="submit" value="submit"></button>
+    </form>
+
+  <h1>Team Name: <%= @team_name %></h1>
+  <h2>Coach: <%= @coach %></h2>
+  <h2>Point Guard: <%= @pg %></h2>
+  <h2>Shooting Guard: <%= @sg %></h2>
+  <h2>Small Forward: <%= @sf %></h2>
+  <h2>Power Forward: <%= @pf %></h2>
+  <h2>Center: <%= @c %></h2>
 
 
  </body>
