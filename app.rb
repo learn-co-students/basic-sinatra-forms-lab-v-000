@@ -7,10 +7,8 @@ class App < Sinatra::Base
   end
 
   post "/team" do
-    @team = {}
-    params.each do |key, value|
-      
-    end
+    @team = params
+    erb :team
   end
 
 end
