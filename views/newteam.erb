@@ -3,10 +3,22 @@
  <head>
   <meta charset="UTF-8">
   <title>Basketball Team Signup</title>
+  <style>body {width:90%; margin: 0 auto;}span {display: inline-block; width: 120px;}</style>
  </head>
  <body>
-
-
+  <h1>Create a Basketball Team!</h1>
+  <form method="POST" action "/newteam">
+   <p><span>Team Name: </span><input type="text" name="name"></p>
+   <p><span>Coach: </span><input type="text" name="coach"></p>
+   <p><span>Point Guard: </span><input type="text" name="pg"></p>
+   <p><span>Shooting Guard: </span><input type="text" name="sg"></p>
+   <p><span>Power Forward: </span><input type="text" name="pf"></p>
+   <p><span>Small Forward: </span><input type="text" name="sf"></p>
+   <p><span>Center: </span><input type="text" name="c"></p>
+   <p><span></span><input type="submit" value="submit"></p>
+  </form>
+  
+  
  </body>
 </html>
 
