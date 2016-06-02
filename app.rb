@@ -5,7 +5,7 @@ class App < Sinatra::Base
   get '/newteam' do
     erb :newteam
   end
-
+  #test
   post '/team' do
     @team_name = params[:name]
     @coach = params[:coach]
@@ -16,5 +16,5 @@ class App < Sinatra::Base
     @center = params[:c]
     erb :team
   end
-  
+
 end
