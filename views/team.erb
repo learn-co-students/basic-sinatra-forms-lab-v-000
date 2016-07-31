@@ -5,10 +5,8 @@
   <title>Basketball Team</title>
  </head>
  <body>
- 
-
-
+   <% @newroster.each do |player| %>
+       <h2><%= params[player] %></h2>
+   <% end %>
  </body>
 </html>
-
-
