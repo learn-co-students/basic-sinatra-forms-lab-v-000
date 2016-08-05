@@ -3,11 +3,34 @@
  <head>
   <meta charset="UTF-8">
   <title>Basketball Team</title>
+  <style>
+    .nl{
+      white-space: pre-line;
+    }
+  </style>
  </head>
  <body>
- 
-
-
+  <h3 class="nl"><%=
+=begin
+    #just testing stuff; left for future reference
+    p params
+    str = ""
+    params.each do |k, v|
+      str += "#{k}: #{v}\n"
+    end
+    "test\ntest"
+    str
+    @team_members.to_s
+=end
+  %></h3>
+  <h2> Team Name: <%= @name %> </h2>
+  <h3 class="nl"> Coach: <%= @coach %>
+    Point Guard: <%= @pg %>
+    Power Forward: <%= @pf %>
+    Shooting Guard: <%= @sg %>
+    Small Forward: <%= @sf %>
+    Center: <%= @c %>
+  </h3>
  </body>
 </html>
 
