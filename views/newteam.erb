@@ -1,12 +1,38 @@
 <!DOCTYPE html>
 <html>
  <head>
+  <style type="text/css">
+    body {text-align: center; display: block;}
+  </style>
   <meta charset="UTF-8">
   <title>Basketball Team Signup</title>
  </head>
  <body>
+ <h1>Createa a Baseketball Team!</h1>
+  <form action="/team" method="POST">
+    <label for="name">Team Name</label>
+    <input type="text" name="name" id="name" />
 
+    <label for="coach">Coach</label>
+    <input type="text" name="coach" id="coach" />
 
+    <label for="pg">Point Guard</label>
+    <input type="text" name="pg" id="pg" />
+
+    <label for="sg">Shooting Guard</label>
+    <input type="text" name="sg" id="sg" />
+
+    <label for="sf">Small Forward</label>
+    <input type="text" name="sf" id="sf" />
+
+    <label for="pf">Power Forward</label>
+    <input type="text" name="pf" id="pf" />
+
+    <label for="c">Center</label>
+    <input type="text" name="c" id="c" />
+
+    <input type="submit" name="submit" value="submit" />
+  </form>
  </body>
 </html>
 
