@@ -3,6 +3,7 @@ source "https://rubygems.org"
 
 # gem "rails"
 
+gem 'learn-co'
 gem 'sinatra'
 gem 'rake'
 gem 'thin'
