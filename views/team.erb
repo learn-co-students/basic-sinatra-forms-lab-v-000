@@ -5,8 +5,9 @@
   <title>Basketball Team</title>
  </head>
  <body>
- 
-
+  <% @team.each do |param, name| %>
+  <h2><%= param[name] %></h2>
+  <% end %>
 
  </body>
 </html>
