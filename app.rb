@@ -1,11 +1,6 @@
 require 'sinatra/base'
-require 'pry'
 
 class App < Sinatra::Base
-
-  get '/' do
-    "I just like to have a / route, can you blame me?"
-  end
 
   get '/newteam' do
     erb :newteam
@@ -19,7 +14,6 @@ class App < Sinatra::Base
     @sf = params["sf"]
     @pf = params["pf"]
     @c = params["c"]
-  #  binding.pry
     erb :team
   end
 
