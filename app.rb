@@ -8,6 +8,9 @@ class App < Sinatra::Base
   end
 
   post '/team' do
+    @team_members.each do |member|
+      @member = params[:member]
+    end
     erb :team
   end
 
