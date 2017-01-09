@@ -1,3 +1,4 @@
+require 'pry'
 describe App do
 
   describe 'GET /newteam' do
@@ -25,6 +26,7 @@ describe App do
 
       fill_in(:name, :with => "Bballers")
       click_button "submit"
+
       expect(page).to have_text("Team Name: Bballers")
     end
 
@@ -33,7 +35,7 @@ describe App do
 
       fill_in(:coach, :with => "Walter")
       click_button "submit"
-
+      
       expect(page).to have_text("Coach: Walter")
     end
 
