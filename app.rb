@@ -5,10 +5,10 @@ class App < Sinatra::Base
   get "/newteam" do
     erb :newteam
   end
-  # 
-  # post "/newteam" do
-  #   erb :newteam
-  # end
+
+  post "/newteam" do
+    erb :newteam
+  end
 
   post "/team" do
     teamname = params[:name]
@@ -17,8 +17,8 @@ class App < Sinatra::Base
     shootingguard = params[:sg]
     powerforward = params[:pf]
     smallforward = params[:sf]
-    centre = params[:c]
-    @array = [teamname, coach, pointguard, shootingguard, powerforward, smallforward, centre]
+    center = params[:c]
+    @array = [teamname, coach, pointguard, shootingguard, powerforward, smallforward, center]
     erb :team
   end
 
