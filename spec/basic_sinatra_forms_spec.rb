@@ -1,3 +1,5 @@
+require 'pry'
+
 describe App do
 
   describe 'GET /newteam' do
@@ -24,6 +26,7 @@ describe App do
       visit '/newteam'
 
       fill_in(:name, :with => "Bballers")
+        binding.pry
       click_button "submit"
       expect(page).to have_text("Team Name: Bballers")
     end
