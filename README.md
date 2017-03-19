@@ -1,4 +1,4 @@
-# Sinatra Forms Lab
+bundle# Sinatra Forms Lab
 
 ## Overview
 
@@ -31,7 +31,7 @@ In this lab, you'll practice building forms in Sinatra by creating a basketball 
 
    Create a route that responds to a POST request at `/team`
    Have the form send a POST request to this route.
-   Upon submission, pass the submitted data to the `team.erb` template. 
+   Upon submission, pass the submitted data to the `team.erb` template.
 
 5. Final Output
 
