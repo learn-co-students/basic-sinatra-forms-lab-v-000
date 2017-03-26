@@ -15,4 +15,5 @@ group :test do
   gem 'capybara'
   gem 'rack-test'
   gem 'poltergeist'
+  gem 'learn-co'
 end
