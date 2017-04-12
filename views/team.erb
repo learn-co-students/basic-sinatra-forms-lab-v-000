@@ -5,10 +5,11 @@
   <title>Basketball Team</title>
  </head>
  <body>
- 
+
+    <% App::FIELDS.each do |field, name| %>
+      <%= name %>: <%= params[field]%><br>
+    <% end %>
 
 
  </body>
 </html>
-
-

@@ -6,8 +6,14 @@
  </head>
  <body>
 
+   <form method="POST" action="/team">
+     <% App::FIELDS.each do |field, name| %>
+       <%= name %>:<input type="text" name="<%= field %>"><br>
+     <% end %>
+     <hr>
+
+     <input type="submit" value="submit"/>
+   </form>
 
  </body>
 </html>
-
-
