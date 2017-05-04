@@ -1,5 +1,5 @@
 GEM
-  remote: https://rubygems.org/
+  remote: http://rubygems.org/
   specs:
     capybara (2.5.0)
       mime-types (>= 1.16)
