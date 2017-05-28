@@ -5,10 +5,9 @@
   <title>Basketball Team</title>
  </head>
  <body>
- 
-
-
+   <h1>Team Name: <%= params[:name] != "" ? params[:name] : "N/A" %></h1>
+   <% positions = POSITIONS.reject{|k, v| k == :name}.each do |key, text| %>
+    <h2><%= text %>: <%= params[key] != "" ? params[key] : "N/A" %></h2>
+   <% end %>
  </body>
 </html>
-
-

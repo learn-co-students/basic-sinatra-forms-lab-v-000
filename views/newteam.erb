@@ -5,9 +5,22 @@
   <title>Basketball Team Signup</title>
  </head>
  <body>
-
+   <h1>Create a Basketball Team</h1>
+   <form action="/team" method="POST">
+     <% POSITIONS.each do |k, v| %>
+     <p>
+       <label for="<%= k %>"><%= v %>: </label> <input type="text" name="<%= k %>" id="<%= k %>"/>
+     </p>
+     <% end %>
+     <!-- <p><label for="name">Team Name:</label> <input type="text" id="name"/></p>
+     <p><label for="coach">Coach:</label> <input type="text" id="coach"/></p>
+     <p><label for="pg">Point Guard:</label> <input type="text" id="pg"/></p>
+     <p><label for="sg">Shooting Gard:</label> <input type="text" id="sg"/></p>
+     <p><label for="sf">Small Forward:</label> <input type="text" id="sf"/></p>
+     <p><label for="pf">Power Forward:</label> <input type="text" id="pf"/></p>
+     <p><label for="c">Center:</label> <input type="text" id="c"/></p> -->
+     <input type="submit" id="submit"/>
+   </form>
 
  </body>
 </html>
-
-
