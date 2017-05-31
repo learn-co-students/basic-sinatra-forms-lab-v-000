@@ -7,7 +7,17 @@ class App < Sinatra::Base
   end
 
   post '/newteam' do
-    @params = Struct.new(*params.keys).new(*params.values)
+    keys = params.collect{|key, value| key.to_sym}
+    @params = Struct.new(*keys).new(*params.values)
+
+
+
+
+    # @params = Struct.new(*params.keys).new(*params.values)
+    # params.collect {|key, value| Struct.new()}
+    # puts params
+    # binding.pry
+    # params.each {|key, value| send("@#{key}=", value)}
     erb :team
   end
 end
