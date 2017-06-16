@@ -24,7 +24,7 @@ describe App do
       visit '/newteam'
 
       fill_in(:name, :with => "Bballers")
-      click_button "submit"
+      click_link_or_button ("submit")
       expect(page).to have_text("Team Name: Bballers")
     end
 
@@ -32,7 +32,7 @@ describe App do
       visit '/newteam'
 
       fill_in(:coach, :with => "Walter")
-      click_button "submit"
+      click_link_or_button ("submit")
 
       expect(page).to have_text("Coach: Walter")
     end
@@ -41,7 +41,7 @@ describe App do
       visit '/newteam'
 
       fill_in(:pg, :with => "Jeff")
-      click_button "submit"
+      click_link_or_button ("submit")
 
       expect(page).to have_text("Point Guard: Jeff")
     end
@@ -50,7 +50,7 @@ describe App do
       visit '/newteam'
 
       fill_in(:sg, :with => "Ralph")
-      click_button "submit"
+      click_link_or_button ("submit")
 
       expect(page).to have_text("Shooting Guard: Ralph")
     end
@@ -59,7 +59,7 @@ describe App do
       visit '/newteam'
 
       fill_in(:pf, :with => "Danny")
-      click_button "submit"
+      click_link_or_button ("submit")
 
       expect(page).to have_text("Power Forward: Danny")
     end
@@ -68,7 +68,7 @@ describe App do
       visit '/newteam'
 
       fill_in(:sg, :with => "Joe")
-      click_button "submit"
+      click_link_or_button ("submit")
 
       expect(page).to have_text("Shooting Guard: Joe")
     end
@@ -77,7 +77,7 @@ describe App do
       visit '/newteam'
 
       fill_in(:c, :with => "Avi")
-      click_button "submit"
+      click_link_or_button ("submit")
 
       expect(page).to have_text("Center: Avi")
     end
