@@ -5,10 +5,37 @@
   <title>Basketball Team</title>
  </head>
  <body>
- 
 
-
+  <h1>Team Name: <%= @team[:name] %></h1>
+  <h2>Coach: <%= @team[:coach] %></h2>
+  <h2>Point Guard: <%= @team[:pg] %></h2>
+  <h2>Shooting Guard: <%= @team[:sg] %></h2>
+  <h2>Power Forward: <%= @team[:pf] %></h2>
+  <h2>Small Forward: <%= @team[:sf] %></h2>
+  <h2>Center: <%= @team[:c] %></h2>
  </body>
 </html>
 
+<!-- <!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Basketball Team</title>
+ </head>
+ <body>
 
+   <h1>Create a Basketball Team!</h1>
+   <form action="/newteam" method="post">
+     <p>Team Name<input type="text" name="team_name"></p>
+     <p>Coach<input type="text" name="coach"></p>
+     <p>Point Guard<input type="text" name="point_guard"></p>
+     <p>Shooting Guard<input type="text" name="shooting_guard"></p>
+     <p>Power Forward<input type="text" name="power_forward"></p>
+     <p>Small Forward<input type="text" name="small_forward"></p>
+     <p>Center<input type="text" name="center"></p>
+     <input type="submit" name="submit" value="submit" id="submit">
+
+
+
+ </body>
+</html> -->
