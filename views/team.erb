@@ -6,7 +6,24 @@
  </head>
  <body>
  
-
+ 	<% @team_info.each_with_index do |(attribute, value), index| %>
+ 		<% case attribute
+ 			 when "name" %>
+ 			<h1><%= "Team Name: #{value}" %></h1>
+ 		<% when "coach" %>
+ 			<h2><%= "Coach: #{value}" %></h2>
+ 		<% when "pg" %>
+ 			<h2><%= "Point Guard: #{value}" %></h2>
+ 		<% when "sg" %>
+ 			<h2><%= "Shooting Guard: #{value}" %></h2>
+ 		<% when "pf" %>
+ 			<h2><%= "Power Forward: #{value}" %></h2>
+ 		<% when "sf" %>
+ 			<h2><%= "Small Forward: #{value}" %></h2>
+ 		<% when "c" %>
+ 			<h2><%= "Center: #{value}" %></h2>
+ 		<% end %>
+ 	<% end %>
 
  </body>
 </html>
