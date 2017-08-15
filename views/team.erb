@@ -5,10 +5,9 @@
   <title>Basketball Team</title>
  </head>
  <body>
- 
-
-
+   <h1>Basketball Team</h1>
+   <% @team.each do |k,v| %>
+    <h2><%= "#{k}: #{v}" %></h2>
+   <% end %>
  </body>
 </html>
-
-

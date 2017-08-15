@@ -1,7 +1,8 @@
 ENV["SINATRA_ENV"] = "test"
 require_relative '../config/environment'
 require 'rack/test'
-require 'capybara/poltergeist'
+#require 'capybara/poltergeist'
+require 'capybara/rspec'
 
 Capybara.javascript_driver = :poltergeist
 
