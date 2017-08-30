@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
- <head>
-  <meta charset="UTF-8">
-  <title>Basketball Team</title>
- </head>
- <body>
- 
-
-
- </body>
+  <head>
+   <meta charset="UTF-8">
+   <title>Basketball Team</title>
+  </head>
+  <body>
+    <h1><%= "Team Name: #{@info[:name].capitalize}" %></h1>
+    <h2><%= "Coach: #{@info[:coach].capitalize}" %></h2>
+    <h2><%= "Point Guard: #{@info[:pg].capitalize}" %></h2>
+    <h2><%= "Shooting Guard: #{@info[:sg].capitalize}" %></h2>
+    <h2><%= "Small Foward: #{@info[:sf].capitalize}" %></h2>
+    <h2><%= "Power Forward: #{@info[:pf].capitalize}" %></h2>
+    <h2><%= "Center: #{@info[:c].capitalize}" %></h2>
+  </body>
 </html>
-
-
