@@ -1,3 +1,4 @@
+require 'pry'
 describe App do
 
   describe 'GET /newteam' do
