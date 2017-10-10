@@ -8,7 +8,7 @@ class App < Sinatra::Base
 
   post '/team' do
     #params is a hash of submitted form data
-    @params = params
+    @team = params
     erb :newteam
   end
 
