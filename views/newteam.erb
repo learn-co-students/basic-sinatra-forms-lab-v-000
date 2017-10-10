@@ -5,9 +5,41 @@
   <title>Basketball Team Signup</title>
  </head>
  <body>
+    <h1>Create A Basketball Team!</h1>
+    <form method="POST" action="/team">
+      <p><label for="GET-name">Team Name:</label>
+      <input type="text" name="name" value=""></input></p>
 
+      <p><label for="coach">Coach:</label>
+      <input type="text" name="coach" value=""></input></p>
+
+      <p><label for="pg">Point Guard:</label>
+      <input type="text" name="pg" value=""></input></p>
+
+      <p><label for="sg">Shooting Guard:</label>
+      <input type="text" name="sg" value=""></input></p>
+
+      <p><label for="sf">Small Forward:</label>
+      <input type="text" name="sf" value=""></input></p>
+
+      <p><label for="pf">Power Forward:</label>
+      <input type="text" name="pf" value=""></input></p>
+
+      <p><label for="c">Center:</label>
+      <input type="text" name="c" value=""></input></p>
+      <input type="submit" value="submit">
+    </form>
+    <h1>Team Name: <%= params[:name] %></h1>
+      <ul>
+        <% params %>
+        <li> Coach: <%= params[:coach] %> </li>
+        <li> Point Guard: <%= params[:pg] %> </li>
+        <li> Shooting Guard: <%= params[:sg] %> </li>
+        <li> Small Forward: <%= params[:sf] %> </li>
+        <li> Power Forward: <%= params[:pf] %> </li>
+        <li> Center: <%= params[:c] %> </li>
+      
+      </ul>
 
  </body>
 </html>
-
-

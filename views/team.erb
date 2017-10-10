@@ -5,10 +5,14 @@
   <title>Basketball Team</title>
  </head>
  <body>
- 
+
+   <h1>A Hot New Team:</h1>
+     <ul>
+       <% team.each do |pos| %>
+       <li> <%= pos[0] %>: <%= pos[1] %> </li>
+       <% end %>
+     </ul>
 
 
  </body>
 </html>
-
-
