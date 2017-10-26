@@ -1,14 +1,19 @@
+
 <!DOCTYPE html>
 <html>
- <head>
-  <meta charset="UTF-8">
-  <title>Basketball Team</title>
- </head>
- <body>
- 
+  <head>
+    <meta charset="UTF-8">
+    <title>My Team</title>
+    <link rel="stylesheet" href="stylesheets/style.css" type="text/css">
+  </head>
 
-
- </body>
+  <body>
+      <h1> <%= "Team Name: #{@teamname}" %></h2>
+      <h3> <%= "Coach: #{@coach}" %></h2>
+      <h3> <%= "Point Guard: #{@pointguard}" %></h2>
+      <h3> <%= "Shooting Guard: #{@shootingguard}" %></h2>
+      <h3> <%= "Power Forward: #{@powerforward}" %></h2>
+      <h3> <%= "Small Forward: #{@smallforward}" %></h2>
+      <h3> <%= "Center: #{@center}"%></h2>
+  </body>
 </html>
-
-
