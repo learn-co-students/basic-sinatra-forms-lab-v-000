@@ -5,10 +5,18 @@
   <title>Basketball Team</title>
  </head>
  <body>
- 
+   <form method= "POST" action= "/team">
+     <p><%="Team Name: #{params[:name]}"%></p>
+    <%= @team.each do |member|%>
+     <!-- <p><%="Coach: #{params[:coach]}"%> </p>
+     <p><%="Point Guard: #{params[:pg]}"%></p>
+     <p><%="Shooting Guard: #{params[:sg]}"%></p>
+     <p><%="Power Forward: #{params[:pf]}"%></p>
+     <p><%="Small Forward: #{params[:sf]}"%></p>
+     <p><%="Center: params #{:c}"%></p>
+     <input type= "submit"> -->
+  </form>
 
 
  </body>
 </html>
-
-
