@@ -8,7 +8,13 @@ class App < Sinatra::Base
   end
 
   post '/team' do
-    @team = ['Louis Armstrong', 'Ella Fitzgerald', 'Miles Davis', 'Dave Brubeck', 'John Coltrane', 'Sonny Rollins']
+    @name = params[:name]
+    @coach = params[:coach]
+    @pg = params[:pg]
+    @sg = params[:sg]
+    @pf = params[:pf]
+    @sf = params[:sf]
+    @c = params[:c]
     erb :team
   end
 
