@@ -11,11 +11,6 @@ class App < Sinatra::Base
   end
 
   post '/team' do
-    # @positions = []
-    #
-    # @power_forward = params[:pf]
-    # @center = params[:c]
-
     erb :team
   end
 end
