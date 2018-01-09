@@ -20,6 +20,13 @@ describe App do
   end
 
   describe 'POST /team' do
+    it 'does not return Sinatra error page' do
+      visit '/newteam'
+
+      click_button "submit"
+      expect(page).to_not have_text("Backtrace")
+    end
+
     it "displays the basketball team name in the browser" do 
       visit '/newteam'
 
