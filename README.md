@@ -29,6 +29,11 @@ display the data from the form after it has been submitted by the user.
 
   ![form for basketball team](https://curriculum-content.s3.amazonaws.com/web-development/Sinatra/basketball-form.png)
 
+  When creating your form, your "Submit" button will need to be identified by
+  either an `id` attribute or a `name` attribute with value of "Submit". We're
+  telling this to you now because our test frame work, Capybara, requires buttons
+  to be [findable either by an `id` or `name` attribute][capybara-click_button].
+
 4. Handle form submission
 
    Create a route that responds to a POST request at `/team`
@@ -54,3 +59,5 @@ display the data from the form after it has been submitted by the user.
 * [Ashley William's GitHub](https://github.com/ashleygwilliams/) - [Citibike Sinatra](https://github.com/ashleygwilliams/citibike-sinatra)
 
 <p data-visibility='hidden'>View <a href='https://learn.co/lessons/basic-sinatra-forms-lab' title='Sinatara Forms Lab'>Sinatara Forms Lab</a> on Learn.co and start learning to code for free.</p>
+
+[capybara-click_button]: http://www.rubydoc.info/gems/capybara/Capybara%2FNode%2FActions%3Aclick_button
