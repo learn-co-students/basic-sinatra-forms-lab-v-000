@@ -2,7 +2,9 @@
 
 ## Overview
 
-In this lab, you'll practice building forms in Sinatra by creating a basketball team sign-up sheet. Your application will have a basic html form, and will display the data from the form after it has been submitted by the user.
+In this lab, you'll practice building forms in Sinatra by creating a basketball
+team sign-up sheet. Your application will have a basic html form, and will
+display the data from the form after it has been submitted by the user.
 
 ## Instructions
 
@@ -31,7 +33,7 @@ In this lab, you'll practice building forms in Sinatra by creating a basketball 
 
    Create a route that responds to a POST request at `/team`
    Have the form send a POST request to this route.
-   Upon submission, pass the submitted data to the `team.erb` template. 
+   Upon submission, pass the submitted data to the `team.erb` template.
 
 5. Final Output
 
@@ -46,6 +48,7 @@ In this lab, you'll practice building forms in Sinatra by creating a basketball 
   Pass the tests! Make sure you read the test output carefully!
 
 ## Resources
+
 * [Ashley William's GitHub](https://github.com/ashleygwilliams/) - [Sinatra Form Party](https://github.com/ashleygwilliams/sinatra-form-party)
 
 * [Ashley William's GitHub](https://github.com/ashleygwilliams/) - [Citibike Sinatra](https://github.com/ashleygwilliams/citibike-sinatra)
