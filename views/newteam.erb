@@ -5,7 +5,20 @@
   <title>Basketball Team Signup</title>
  </head>
  <body>
+   <h1>Create a Basketball Team</h1>
+       <form method="POST" action="/team">
+         <p>Team name: <input type="text" name="name"></p>
+         <p>Coach: <input type="text" name="coach"></p>
+         <p>Point Guard: <input type="text" name="pg"></p>
+         <p>Shooting Guard: <input type="text" name="sg"></p>
+         <p>Power Forward: <input type="text" name="pf"></p>
+         <p>Small Forward: <input type="text" name="sf"></p>
+         <p>Center: <input type="text" name="c"></p>
+    <!-- #Submit" button will need to be identified by
+    either an id attribute or a name attribute with value of "Submit". We're
+    telling this to you now because our test frame work, Capybara, requires buttons
+    to be findable either by an id or name attribute.      -->
+         <p><input type="submit" id="submit"></p>
+       </form>
  </body>
 </html>
-
-
