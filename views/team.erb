@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html>
- <head>
-  <meta charset="UTF-8">
-  <title>Basketball Team</title>
- </head>
- <body>
- 
-
-
- </body>
+  <head>
+    <meta charset="UTF-8">
+    <title>Sinatra Practice</title>
+    <style>
+      body {text-align: center;color: #ffffff;background-image:url(http://getwallpapers.com/wallpaper/full/b/0/8/1015391-popular-michael-jordan-wallpaper-1920x1080-1920x1080-mac.jpg);}
+      h1 {;font-size: 5em;text-shadow: 0 0 50px #4BC6E2;margin-bottom: 0;}
+      p, a {;font-family: Georgia, serif;font-size: 33px;font-style: italic;font-weight: normal;color: #ffffff;background-color: rgba(27, 23, 23, 0.92);padding: 18px; margin-right: -4px;margin-bottom: 0;}
+    </style>
+  </head>
+<!------------------------------------------------------------------------->
+  <body>
+    <p>Team Name: <%= @name %></p>
+    <p>Coach: <%= @coach %></p>
+    <p>Point Guard: <%= @pg %></p>
+    <p>Power Forward: <%= @pf %></p>
+    <p>Shooting Guard: <%= @sg %></p>
+    <p>Small Forward: <%= @sf %></p>
+    <p>Center: <%= @c %></p>
+  </body>
 </html>
 
 
