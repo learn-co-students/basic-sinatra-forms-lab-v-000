@@ -6,7 +6,7 @@ describe App do
       expect(last_response.status).to eq(200)
     end
 
-    it 'renders basketball team form' do 
+    it 'renders basketball team form' do
       visit '/newteam'
       expect(page).to have_selector("form")
       expect(page).to have_field(:name)
@@ -27,7 +27,7 @@ describe App do
       expect(page).to_not have_text("Backtrace")
     end
 
-    it "displays the basketball team name in the browser" do 
+    it "displays the basketball team name in the browser" do
       visit '/newteam'
 
       fill_in(:name, :with => "Bballers")

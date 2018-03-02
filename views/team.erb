@@ -1,17 +1,22 @@
 <!DOCTYPE html>
 <html>
- <head>
-  <meta charset="UTF-8">
-  <title>Basketball Team</title>
- </head>
- <body>
-   <h1>Team Name: <%= @team_name %></h1>
-   <h2>Coach: <%= @coach %></h2>
-   <h2>Point Guard: <%= @pg %></h2>
-   <h2>Shooting Guard: <%= @sg %></h2>
-   <h2>Small Forward: <%= @sf %></h2>
-   <h2>Power Forward: <%= @pf %></h2>
-   <h2>Center: <%= @c %></h2>
-   <input type="submit" value="submit">
- </body>
+  <head>
+    <meta charset="utf-8">
+    <title>Team Name: <%= @name %></title>
+  </head>
+  <body>
+    <p>Team Name: </p><%= @name  %>
+
+    <p>Coach: </p> <%= @coach %>
+
+    <p>Point Guard: </p><%= @pg %>
+
+    <p>Shooting Guard: </p><%= @sg %>
+
+    <p>Small Forward: </p><%= @sf %>
+
+    <p>Power Forward: </p><%= @pf %>
+
+    <p>Center: </p><%= @c %>
+  </body>
 </html>
