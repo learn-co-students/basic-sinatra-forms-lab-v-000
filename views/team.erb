@@ -5,10 +5,12 @@
   <title>Basketball Team</title>
  </head>
  <body>
- 
-
-
+   <%@team.each do |k,v|%>
+    <%if k == "Team Name:"%>
+      <h1><%="#{k} #{v}"%></h1>
+    <%else%>
+      <h2><%="#{k} #{v}"%></h2>
+    <%end%>
+  <%end%>
  </body>
 </html>
-
-
