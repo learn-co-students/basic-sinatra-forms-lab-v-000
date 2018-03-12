@@ -12,6 +12,7 @@ RSpec.configure do |config|
   config.order = 'default'
 end
 
+
 def app
   Rack::Builder.parse_file('config.ru').first
 end

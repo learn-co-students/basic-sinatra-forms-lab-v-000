@@ -71,13 +71,14 @@ describe App do
       expect(page).to have_text("Power Forward: Danny")
     end
 
-    it "displays the shooting gaurd's name in the browser" do
+    it "displays the small forward's name in the browser" do
       visit '/newteam'
-
+      
       fill_in(:sg, :with => "Joe")
       click_button "Submit"
 
-      expect(page).to have_text("Shooting Guard: Joe")
+
+      expect(page).to have_text("Small Forward: Joe")
     end
 
     it "displays the center's name in the browser" do
