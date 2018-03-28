@@ -5,10 +5,11 @@
   <title>Basketball Team</title>
  </head>
  <body>
- 
+   <% @teams.each do |team| %>
+      <h2><%= team %></h2>
+   <% end %>
 
 
  </body>
 </html>
-
-
+# using similar format above as previous code along example, but not sure if this will work once the relationship is established
