@@ -3,9 +3,20 @@
  <head>
   <meta charset="UTF-8">
   <title>Basketball Team Signup</title>
+  <link rel="stylesheet" href="stylesheets/style.css" type="text/css">
  </head>
  <body>
+   <!-- The form should have fields for: Team name ('name') Coach ('coach') Point Guard ('pg') Shooting Guard ('sg') Power Forward ('pf') Small Forward ('sf') Center ('c') -->
+  <h1>Create a Basketball Team!</h1>
+    <form method="POST" action="/team">
+      <p>Team name: <input type="name" name="name"/></p>
+      <p>Coach: <input type="text" name="coach"></p>
+      <p>Point Guard: <input type="text" name="pg"></p>
+      <p>Shooting Guard: <input type="text" name="sg"></p>
+      <p>Small Forward: <input type="text" name="sf"></p>
+      <p>Power Forward: <input type="text" name="pf"></p>
+      <p>Center: <input type="text" name="c"></p>
+      <p><input id="Submit" type="submit"></p>
+    </form>
  </body>
 </html>
-
-
