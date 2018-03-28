@@ -2,14 +2,17 @@
 <html>
  <head>
   <meta charset="UTF-8">
-  <title>Basketball Team</title>
+  <title> Basketball Team </title>
  </head>
  <body>
-   <% @teams.each do |team| %>
-      <h2><%= team %></h2>
-   <% end %>
-
-
+   <p>Team Name: <%= @teams[:name] %></p>
+   <p>Coach: <%= @teams[:coach] %></p>
+   <p>Point Guard: <%= @teams[:pg] %></p>
+   <p>Shooting Guard: <%= @teams[:sg] %></p>
+   <p>Small Forward: <%= @teams[:sf] %></p>
+   <p>Power Forward: <%= @teams[:pf] %></p>
+   <p>Center: <%= @teams[:c] %></p>
  </body>
 </html>
+
 # using similar format above as previous code along example, but not sure if this will work once the relationship is established
