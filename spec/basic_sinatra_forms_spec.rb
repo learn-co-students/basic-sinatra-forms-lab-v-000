@@ -1,3 +1,5 @@
+require 'pry'
+
 describe App do
 
   describe 'GET /newteam' do
@@ -24,6 +26,7 @@ describe App do
       visit '/newteam'
 
       click_button "Submit"
+      puts page.text
       expect(page).to_not have_text("Backtrace")
     end
 
