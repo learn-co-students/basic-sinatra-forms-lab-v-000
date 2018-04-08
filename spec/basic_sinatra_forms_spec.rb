@@ -1,4 +1,5 @@
 describe App do
+  #updated to reflect my variable name choices
 
   describe 'GET /newteam' do
     it 'sends a 200 status code' do
@@ -11,15 +12,17 @@ describe App do
       expect(page).to have_selector("form")
       expect(page).to have_field(:name)
       expect(page).to have_field(:coach)
-      expect(page).to have_field(:pg)
-      expect(page).to have_field(:sg)
-      expect(page).to have_field(:sf)
-      expect(page).to have_field(:pf)
-      expect(page).to have_field(:c)
+      expect(page).to have_field(:point_guard)
+      expect(page).to have_field(:shooting_guard)
+      expect(page).to have_field(:small_forward)
+      expect(page).to have_field(:power_forward)
+      expect(page).to have_field(:center)
     end
   end
 
   describe 'POST /team' do
+    #edited typo's, i.e., 'gaurd' => 'guard' =p
+    # =D
     it 'does not return Sinatra error page' do
       visit '/newteam'
 
@@ -47,7 +50,7 @@ describe App do
     it "displays the point guard's name in the browser" do
       visit '/newteam'
 
-      fill_in(:pg, :with => "Jeff")
+      fill_in(:point_guard, :with => "Jeff")
       click_button "Submit"
 
       expect(page).to have_text("Point Guard: Jeff")
@@ -56,7 +59,7 @@ describe App do
     it "displays the shooting guard's name in the browser" do
       visit '/newteam'
 
-      fill_in(:sg, :with => "Ralph")
+      fill_in(:shooting_guard, :with => "Ralph")
       click_button "Submit"
 
       expect(page).to have_text("Shooting Guard: Ralph")
@@ -65,25 +68,26 @@ describe App do
     it "displays the power forward's name in the browser" do
       visit '/newteam'
 
-      fill_in(:pf, :with => "Danny")
+      fill_in(:power_forward, :with => "Danny")
       click_button "Submit"
 
       expect(page).to have_text("Power Forward: Danny")
     end
 
-    it "displays the shooting gaurd's name in the browser" do
+    it "displays the small forward's name in the browser" do
+      #had two shooting guard test specs and no small forward
       visit '/newteam'
 
-      fill_in(:sg, :with => "Joe")
+      fill_in(:small_forward, :with => "Joe")
       click_button "Submit"
 
-      expect(page).to have_text("Shooting Guard: Joe")
+      expect(page).to have_text("Small Forward: Joe")
     end
 
     it "displays the center's name in the browser" do
       visit '/newteam'
 
-      fill_in(:c, :with => "Avi")
+      fill_in(:center, :with => "Avi")
       click_button "Submit"
 
       expect(page).to have_text("Center: Avi")
