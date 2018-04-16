@@ -9,7 +9,7 @@ get '/newteam' do
 end
 
 post '/team' do
-  puts "params"
+  puts params
 
   @name= params["name"]
   @coach= params["coach"]
