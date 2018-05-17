@@ -10,7 +10,7 @@ display the data from the form after it has been submitted by the user.
 
 1. Run `bundle install`
 
-2. Run `bundle exec shotgun`
+2. Run `shotgun`
 
 3. Make a form
 
