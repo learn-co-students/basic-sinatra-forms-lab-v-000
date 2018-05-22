@@ -32,7 +32,7 @@ It should look something like this:
 ![form for basketball team](https://curriculum-content.s3.amazonaws.com/web-development/Sinatra/basketball-form.png)
 
 When creating your form, your "Submit" button will need to be identified by an
-`id` attribute attribute with value of "Submit". We're telling this to you now
+`id` attribute with value of "Submit". We're telling this to you now
 because our test frame work, Capybara, requires buttons to be
 [findable by an `id`, `title`, or `value` attribute][capybara-click_button].
 
