@@ -53,15 +53,6 @@ describe App do
       expect(page).to have_text("Point Guard: Jeff")
     end
 
-    it "displays the shooting guard's name in the browser" do
-      visit '/newteam'
-
-      fill_in(:sg, :with => "Ralph")
-      click_button "Submit"
-
-      expect(page).to have_text("Shooting Guard: Ralph")
-    end
-
     it "displays the power forward's name in the browser" do
       visit '/newteam'
 
