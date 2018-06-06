@@ -5,16 +5,8 @@ class App < Sinatra::Base
     erb :newteam
   end
 
-  # post '/team' do
-  #     erb :team
-  # end
-
-  post '/:form_type' do
-     erb params[:form_type].to_sym
-   end
-
-
-
-
+ post '/:form_type' do
+   erb params[:form_type].to_sym
+ end
 
 end
