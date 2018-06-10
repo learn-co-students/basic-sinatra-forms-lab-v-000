@@ -1,12 +1,20 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
  <head>
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css">
   <title>Basketball Team</title>
  </head>
  <body>
- 
 
+    <h1>Team Name: <%= @params[:name] %></h1>
+
+    <h2>Coach: <%= @params[:coach] %></h2>
+    <h2>Point Guard: <%= @params[:pg] %></h2>
+    <h2>Shooting Guard: <%= @params[:sg] %></h2>
+    <h2>Small Foward: <%= @params[:sf] %></h2>
+    <h2>Power Forward: <%= @params[:pf] %></h2>
+    <h2>Center: <%= @params[:c] %></h2>
 
  </body>
 </html>
