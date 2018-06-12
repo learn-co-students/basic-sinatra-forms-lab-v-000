@@ -32,6 +32,7 @@ describe App do
 
       fill_in(:name, :with => "Bballers")
       click_button "Submit"
+        # binding.pry 
       expect(page).to have_text("Team Name: Bballers")
     end
 
