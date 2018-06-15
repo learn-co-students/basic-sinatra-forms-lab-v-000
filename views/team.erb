@@ -5,15 +5,14 @@
   <title>Basketball Team</title>
  </head>
   <body>
-    <form method="post" action="/team">
+  <form method="post" action="/team">
   <h1>Team Name: <%= params["name"]%></h1>
   <h2><p>Coach: <%= params["coach"]%></p></h2>
   <h2><p>Point Guard: <%= params["pg"]%></p></h2>
-  <h2><p>Power Forward: <%= params["pf"]%></p</h2>
+  <h2><p>Power Forward: <%= params["pf"]%></p></h2>
   <h2><p>Shooting Guard: <%= params["sg"]%></p></h2>
   <h2><p>Small Forward: <%= params["sf"]%></p></h2>
   <h2><p>Center: <%= params["c"]%></p></h2>
+  </form>
   </body>
 </html>
-@user_name = params[:name]
-    "Hello #{@user_name}!"
