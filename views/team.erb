@@ -5,10 +5,24 @@
   <title>Basketball Team</title>
  </head>
  <body>
- 
+ <%@params.each do |key, value| %>
+    <%if key == 'name' %>
+    <h1>Team Name: <%= value %></h1>
+    <%elsif key == 'coach' %>
+    <p>Coach: <%= value %></p>
+    <%elsif key == 'pg' %>
+    <p>Point Guard: <%= value %></p>
+    <%elsif key == 'sg' %>
+    <p>Shooting Guard: <%= value %></p>
+    <%elsif key == 'sf' %>
+    <p>Small Forward: <%= value %></p>
+    <%elsif key == 'pf' %>
+    <p>Power Forward: <%= value %></p>
+    <%elsif key == 'c' %>
+    <p>Center: <%= value %></p>
+    <% end %>
+  <% end %>
 
 
  </body>
 </html>
-
-
