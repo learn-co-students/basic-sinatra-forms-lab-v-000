@@ -3,9 +3,41 @@
  <head>
   <meta charset="UTF-8">
   <title>Basketball Team Signup</title>
+  <link rel="stylesheet" href="/styles.css" type="text/css">
  </head>
  <body>
+   <h1>Create a Basketball Team!</h1>
+
+   <form class="team" action="/team" method="post">
+     <p>
+      <label for="name">Team Name: </label>
+      <input type="text" name="name" id="name">
+    </p>
+    <p>
+      <label for="coach">Coach: </label>
+      <input type="text" name="coach" id="coach">
+    </p>
+    <p>
+      <label for="point_guard">Point Guard: </label>
+      <input type="text" name="pg" id="point_guard">
+    </p>
+    <p>
+      <label for="shooting_guard">Shooting Guard: </label>
+      <input type="text" name="sg" id="shooting_guard">
+    </p>
+    <p>
+      <label for="small_forward">Small Forward: </label>
+      <input type="text" name="sf" id="small_forward">
+    </p>
+    <p>
+      <label for="power_forward">Power Forward: </label>
+      <input type="text" name="pf" id="power_forward">
+    </p>
+    <p>
+      <label for="center">Center: </label>
+      <input type="text" name="c" id="center">
+    <p>
+      <input type="submit" name="submit" value="Submit" id="submit">
+   </form>
  </body>
 </html>
-
-
