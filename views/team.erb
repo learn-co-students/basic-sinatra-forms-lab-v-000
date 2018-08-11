@@ -3,9 +3,20 @@
  <head>
   <meta charset="UTF-8">
   <title>Basketball Team</title>
+  <style>
+       h2, p {
+            font-weight: bold;
+        }
+  </style>
  </head>
  <body>
- 
+    <h2>Team Name: <%= params[:name]%></h2>
+    <p>Coach: <%=params[:coach]%></p>
+    <p>Point Guard: <%=params[:pg]%></p>
+    <p>Shooting Guard: <%=params[:sg]%></p>
+    <p>Small Forward: <%=params[:sf]%></p>
+    <p>Power Forward: <%=params[:pf]%></p>
+    <p>Center: <%=params[:c]%></p>
 
 
  </body>
