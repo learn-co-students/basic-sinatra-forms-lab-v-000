@@ -5,15 +5,15 @@
   <title>Basketball Team Signup</title>
  </head>
  <body>
-   <form method="GET" action="/newteam"> <!-- think it's a get here b/c you're getting data with this form, posting with other -->
+   <form method="POST" action="/team"> <!-- posting this info that we get here to our /team route -->
      <p>Team Name: <input type="text" name="name"></p> <!--this creates box for submission -->
-     <p>Coach: <input type="text" coach="coach"></p>
-     <p>Point Guard: <input type="text" pg="pg"></p>
-     <p>Shooting Guard: <input type="text" sg="sg"></p>
-     <p>Power Forward: <input type="text" pf="pf"></p>
-     <p>Small Forward: <input type="text" sf="sf"></p>
-     <p>Center: <input type="text" c="c"></p>
-     <input id="Submit"> <!--This creates submit button. Capybara require buttons to be findable --> 
+     <p>Coach: <input type="text" name="coach"></p>
+     <p>Point Guard: <input type="text" name="pg"></p>
+     <p>Shooting Guard: <input type="text" name="sg"></p>
+     <p>Power Forward: <input type="text" name="pf"></p>
+     <p>Small Forward: <input type="text" name="sf"></p>
+     <p>Center: <input type="text" name="c"></p>
+     <input type="submit" id="Submit"> <!--This creates submit button. Capybara require buttons to be findable -->
    </form>
  </body>
 </html>
