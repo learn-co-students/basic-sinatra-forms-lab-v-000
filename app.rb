@@ -6,7 +6,9 @@ class App < Sinatra::Base
     erb :newteam
   end
 
-  post '/team' do
+  #route = HTTP method paired with a URL-matching pattern
+  #each route is associated with a block, or a "controller action"
+  post '/team' do #"post" is an HTML method/verb; '/team' URL -- "post '/team'" a route that corresponds to an HTML request
     @name = params[:name]
     @coach = params[:coach]
     @pg = params[:pg]
