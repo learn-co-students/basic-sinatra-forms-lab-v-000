@@ -5,5 +5,10 @@ class App < Sinatra::Base
 		erb :newteam
 	end	
 
+	post '/newteam' do
+    	@hash = params
+    	erb :team
+  	end
+
 
 end
