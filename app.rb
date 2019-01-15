@@ -1,15 +1,12 @@
-# Note to Indy: I think this lab is done? But honestly, no idea without shotgun. Take a look later#
-
-
 require 'sinatra/base'
 
 class App < Sinatra::Base
 
-  get '/new_team' do
+  get "/newteam" do
     erb :newteam
   end
 
-  post '/team' do
+  post "/team" do
     @name = params[:name]
     @coach = params[:coach]
     @pg = params[:pg]
@@ -17,7 +14,6 @@ class App < Sinatra::Base
     @pf = params[:pf]
     @sf = params[:sf]
     @c = params[:c]
-    
     erb :team
   end
 
