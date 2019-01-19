@@ -5,10 +5,14 @@
   <title>Basketball Team</title>
  </head>
  <body>
- 
-
+ 	<h1>Team Name: <%=@team[:name]%></h1>
+ 	<% @team.delete(:name) %>
+ 	<%@team.each do |title, person|%>
+ 		<p><h2><%=title%>: <%=person%></h2></p>
+	<%end%>
 
  </body>
 </html>
+
 
 
