@@ -5,10 +5,16 @@
   <title>Basketball Team</title>
  </head>
  <body>
- 
+   <% params.each do |key, value| %>
+        <h1><%= "Team Name: #{value}" if key == 'name' %></h1>
+        <h2><%= "Coach: #{value}" if key == 'coach' %></h2>
+        <h2><%= "Point Guard: #{value}" if key == 'pg' %></h2>
+        <h2><%= "Shooting Guard: #{value}" if key == 'sg' %></h2>
+        <h2><%= "Small Forward: #{value}" if key == 'sf' %></h2>
+        <h2><%= "Power Forward: #{value}" if key == 'pf' %></h2>
+        <h2><%= "Center: #{value}" if key == 'c' %></h2>
 
+   <% end %>
 
  </body>
 </html>
-
-
