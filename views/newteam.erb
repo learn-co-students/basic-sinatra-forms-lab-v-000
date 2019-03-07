@@ -6,17 +6,21 @@
  </head>
  <body>
     <h1>Create a Basketball Team!</h1>
-    <form action="/team" method="POST">
+
+    <form action="/newteam" method="POST">
       <label for="new_team">Name:</label>
 
-  <p><input type="text" name="field" id="user_name" /></p>
-  <p><input type="text" name="field"
-  <p><input type="text" name="field"
-  <p><input type="text" name="field"
-  <p><input type="text" name="field"
-  <p><input type="text" name="field"
-  <p><input type="text" name="field"
+  <!-- <p><input type="text" name="user_name" id="user_name" /></p> -->
+
+  <p><input type="text" name="name" id="team_name"/></p>
+  <p><input type="text" name="Coach" id="coach"/></p>
+  <p><input type="text" name="Point Guard" id="pg"/></p>
+  <p><input type="text" name="Shooting Guard" id="sg"/></p>
+  <p><input type="text" name="field" id="Small_Forward"/></p>
+  <p><input type="text" name="field" id="Power_Forward"/></p>
+  <p><input type="text" name="field" id="Center"/></p>
   <input type="submit" value="Submit"/>
-</form>
+
+  </form>
  </body>
 </html>
