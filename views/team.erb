@@ -7,15 +7,27 @@
 
  <body>
 
-   <p>Team name: <%=@name%>
-  Coach: <%=@coach%>
-  pg:<%=@Point_Guard%>
-  sg:<%=@Shooting Guard%>
-  :Power Forward => "pf"
-  :Small Forward => "sf"
-  :Center => "c"
-}
-  %></p>
+   <p>
+  <!-- @Team name: <%=@name%>
+  @Coach: <%=@coach%>
+  @Point Guard:<%=@pg%>
+  @Shooting Guard:<%=@sg%>
+  @Power Forward:<%=pf%>
+  @Small Forwar<%=sf%>
+  @Center:<%=c%> -->
+
+
+  <%=
+  Team name: @name
+  @Coach: @coach
+  @Point Guard:@pg
+  @Shooting Guard:@sg
+  @Power Forward:pf
+  @Small Forwarsf
+  @Center:c
+  %>
+
+  </p>
 
   </body>
 
