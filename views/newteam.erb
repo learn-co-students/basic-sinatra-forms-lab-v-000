@@ -8,23 +8,28 @@
     <h1>Create a Basketball Team!</h1>
 
     <form action="/team" method="POST">
+
       <label for="team">Team Name:</label>
+      <input type="text" name="team_name" id="team name"/>
+          <p></p>
+
+      <label for="coach">Coach:</label>
+      <input type="text" name="Coach" id="coach"/>
+          <p></p>
+
+      <label for="pg">Point Guard:</label>
+      <input type="text" name="Point Guard" id="pg"/>
+          <p></p>
 
 
-<!-- Note to self.....label in front of each input  -->
-
-  <input type="text" name="team_name" id="team name"/>
-  <p></p>
-  <label for="coach">Coach:</label>
-  <p><input type="text" name="Coach" id="coach"/></p>
-
-  <p><input type="text" name="Point Guard" id="pg"/></p>
+      <label for="sg">Shooting Guard:</label>
+      <input type="text" name="Shooting Guard" id="sg"/>
+          <p></p>
 
 
-  <p><input type="text" name="Shooting Guard" id="Shooting Guard"/></p>
-
-
-  <p><input type="text" name="Small Forward" id="sf"/></p>
+      <label for="sf">Small Forward:</label>
+      <input type="text" name="Small Forward" id="sf"/>
+          <p></p>
 
 
   <p><input type="text" name="Power Forward" id="Power Forward"/></p>
@@ -32,7 +37,7 @@
 
   <p><input type="text" name="Center" id="c"/></p>
 
-  
+
   <input type="submit" value="Submit"/>
   </form>
  </body>
