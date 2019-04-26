@@ -15,7 +15,7 @@ describe App do
       expect(page).to have_field(:sg)
       expect(page).to have_field(:sf)
       expect(page).to have_field(:pf)
-      expect(page).to have_field(:c)
+      expect(page).to have_field(:center)
     end
   end
 
@@ -74,7 +74,7 @@ describe App do
     it "displays the center's name in the browser" do
       visit '/newteam'
 
-      fill_in(:c, :with => "Avi")
+      fill_in(:center, :with => "Avi")
       click_button "Submit"
 
       expect(page).to have_text("Center: Avi")
