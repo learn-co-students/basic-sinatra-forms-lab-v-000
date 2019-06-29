@@ -5,10 +5,8 @@
   <title>Basketball Team</title>
  </head>
  <body>
- 
-
-
+   <% @team.each do |member, name| %>
+   <h2><%= name %></h2>
+   <% end %>
  </body>
 </html>
-
-
