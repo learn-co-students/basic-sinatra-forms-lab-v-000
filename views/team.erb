@@ -5,10 +5,15 @@
   <title>Basketball Team</title>
  </head>
  <body>
- 
+
+
+   <h1><%= @array[0] %></h1>
+   
+
+   <% @info2 = @array.reject {|arr| arr == arr.first} %>
+   <h2><%= @info2 %></h2>
+
 
 
  </body>
 </html>
-
-
