@@ -7,16 +7,19 @@ class App < Sinatra::Base
   end
 
   post '/team' do
-    @array = [@team = params[:name], @coach = params[:name], @point = params[:pg], @shooting = params[:sg], @power = params[:pf], @small = params[:sf], @center = params[:c]]
-    @element1 = @array[0]
-    @arr2 = @array
-
+    @name = params[:name]
+    @coach = params[:coach]
+    @pg = params[:pg]
+    @sg = params[:sg]
+    @pf = params[:pf]
+    @sf = params[:sf]
+    @c = params[:c]
+    
     erb :team
   end
 
-  get '/team' do
-    erb :team
-  end
+
+
 
 
 
