@@ -1,11 +1,31 @@
 <!DOCTYPE html>
 <html>
- <head>
-  <meta charset="UTF-8">
-  <title>Basketball Team Signup</title>
- </head>
- <body>
- </body>
+    <head>
+      <meta charset="UTF-8">
+      <title>Basketball Team Signup</title>
+      <style>
+        body {text-align: center;color: #ffffff;background-image:url(http://getwallpapers.com/wallpaper/full/b/0/8/1015391-popular-michael-jordan-wallpaper-1920x1080-1920x1080-mac.jpg);}
+        h1 {;font-size: 5em;text-shadow: 0 0 50px #4BC6E2;margin-bottom: 0;}
+        p, a {;font-family: Georgia, serif;font-size: 33px;font-style: italic;font-weight: normal;color: #ffffff;background-color: rgba(27, 23, 23, 0.92);padding: 18px; margin-right: -4px;margin-bottom: 0;}
+        form {display: inline-block;}
+        #form_field {margin: 10px;}
+        #form_label {font-size: 20px;}
+        .button {margin: 20px;color: white;background: rgba(27, 23, 23, 0.92);padding: 20px 40px;}
+      </style>
+    </head>
+<!------------------------------------------------------------------------->
+    <body>
+      <!--form-->
+      <form method="POST" action="/team">
+        <p>Team name: <input type="text" name="name"></p>
+        <p>Coach: <input type="text" name="coach"></p>
+        <p>Point Guard: <input type="text" name="pg"></p>
+        <p>Shooting Guard: <input type="text" name="sg"></p>
+        <p>Power Forward: <input type="text" name="pf"></p>
+        <p>Small Forward: <input type="text" name="sf"></p>
+        <p>Center: <input type="text" name="c"></p>
+        <input class="button" id="submit" type="submit">
+      </form>
+      <!--form-->
+    </body>
 </html>
-
-
