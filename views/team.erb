@@ -5,10 +5,11 @@
   <title>Basketball Team</title>
  </head>
  <body>
- 
+   <h1>Team Name: <%= @team[:name] %></h1>
 
+   <% Hash[Array(@team)[1..-2]].each.with_index do |(k,v),i| %>
+    <h2><%= "#{@labels[i]}: #{v}" %></h2>
+   <% end %>
 
  </body>
 </html>
-
-
