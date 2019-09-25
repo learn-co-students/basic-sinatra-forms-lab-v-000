@@ -53,15 +53,6 @@ describe App do
       expect(page).to have_text("Point Guard: Jeff")
     end
 
-    it "displays the power forward's name in the browser" do
-      visit '/newteam'
-
-      fill_in(:pf, :with => "Danny")
-      click_button "Submit"
-
-      expect(page).to have_text("Power Forward: Danny")
-    end
-
     it "displays the shooting guard's name in the browser" do
       visit '/newteam'
 
@@ -71,6 +62,25 @@ describe App do
       expect(page).to have_text("Shooting Guard: Joe")
     end
 
+    it "displays the small forward's name in the browser" do
+      visit '/newteam'
+
+      fill_in(:sf, :with => "Ian")
+      click_button "Submit"
+
+      expect(page).to have_text("Small Forward: Ian")
+    end
+
+    it "displays the power forward's name in the browser" do
+      visit '/newteam'
+
+      fill_in(:pf, :with => "Danny")
+      click_button "Submit"
+
+      expect(page).to have_text("Power Forward: Danny")
+    end
+
+
     it "displays the center's name in the browser" do
       visit '/newteam'
 
@@ -79,7 +89,5 @@ describe App do
 
       expect(page).to have_text("Center: Avi")
     end
-
-
   end
 end
