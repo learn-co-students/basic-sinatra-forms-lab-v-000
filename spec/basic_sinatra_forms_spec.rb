@@ -62,7 +62,7 @@ describe App do
       expect(page).to have_text("Power Forward: Danny")
     end
 
-    it "displays the shooting gaurd's name in the browser" do
+    it "displays the shooting guard's name in the browser" do
       visit '/newteam'
 
       fill_in(:sg, :with => "Joe")
