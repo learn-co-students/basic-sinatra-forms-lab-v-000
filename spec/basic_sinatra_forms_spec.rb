@@ -1,4 +1,4 @@
-puts describe App do
+ describe App do
 
   describe 'GET /newteam' do
     it 'sends a 200 status code' do
