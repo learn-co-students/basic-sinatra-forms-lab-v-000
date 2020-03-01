@@ -5,10 +5,14 @@
   <title>Basketball Team</title>
  </head>
  <body>
- 
-
-
+   <%@newteam_labels.each do |k,v|%>
+     <%if @newteam_params[k]!=""%>
+       <%if k==:name%>
+         <h2><%=v+": "+@newteam_params[k]%></h2>
+       <%else%>
+         <h3><%=v+": "+@newteam_params[k]%></h3>
+       <%end%>
+     <%end%>
+   <%end%>
  </body>
 </html>
-
-
