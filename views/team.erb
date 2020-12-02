@@ -5,10 +5,8 @@
   <title>Basketball Team</title>
  </head>
  <body>
- 
-
-
+   <% params.each do |key, value| %>
+    <h2> <%= "#{@full[key.to_sym]}: #{value}" %> </h2>
+    <% end %>
  </body>
 </html>
-
-
